@@ -1,0 +1,93 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 217 91% 60%; /* Brighter blue for light theme */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 260 80% 65%; /* Purple accent for light theme */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 217 91% 60%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 15% 95%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 40% 96.1%;
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    --background: 0 0% 0%; /* Black like Vercel */
+    --foreground: 210 15% 95%; /* Main text: Off-white */
+    --card: 220 15% 15%; /* Card BG: Darker Gray-Blue (Reverted) */
+    --card-foreground: 210 40% 98%; /* Card Text: Off-white (Reverted) */
+    --popover: 220 15% 12%; /* Popover BG: Even Darker Gray-Blue (Reverted) */
+    --popover-foreground: 210 40% 98%; /* Popover Text: Off-white (Reverted) */
+    --primary: 217 91% 65%; /* Primary actions: Brighter Metallic Blue */
+    --primary-foreground: 210 15% 98%; /* Text on primary actions: Bright White */
+    --secondary: 220 10% 15%; /* Secondary elements BG: Dark Gray-Blue */
+    --secondary-foreground: 210 15% 85%; /* Secondary text: Light Gray */
+    --muted: 220 10% 12%; /* Muted elements BG: Very Dark Gray-Blue */
+    --muted-foreground: 210 20% 80%; /* Muted text: Lighter Gray */
+    --accent: 270 80% 70%; /* Accent color (gradients): Brighter Purple */
+    --accent-foreground: 210 15% 98%; /* Text on accent: Bright White */
+    --destructive: 0 70% 60%; /* Destructive actions: Brighter Red */
+    --destructive-foreground: 210 15% 98%; /* Text on destructive: Bright White */
+    --border: 220 15% 25%; /* Borders: Slightly Lighter Gray-Blue (Reverted) */
+    --input: 220 10% 18%; /* Input BG: Dark Gray-Blue */
+    --ring: 217 91% 65%; /* Focus Rings: Brighter Metallic Blue (match primary) */
+    
+    --chart-1: 10 80% 60%;
+    --chart-2: 270 80% 60%;
+    --chart-3: 180 80% 50%;
+    --chart-4: 40 90% 55%;
+    --chart-5: 300 75% 60%;
+
+    --sidebar-background: 220 15% 7%;
+    --sidebar-foreground: 210 15% 85%;
+    --sidebar-primary: 217 91% 65%;
+    --sidebar-primary-foreground: 210 15% 98%;
+    --sidebar-accent: 220 15% 12%;
+    --sidebar-accent-foreground: 210 15% 95%;
+    --sidebar-border: 220 15% 15%;
+    --sidebar-ring: 217 91% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
